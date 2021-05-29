@@ -1,0 +1,278 @@
+%%
+%% This is file `example.tex',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% coppe.dtx  (with options: `example')
+%% 
+%% This is a sample monograph which illustrates the use of `coppe' document
+%% class and `coppe-unsrt' BibTeX style.
+%% 
+%% \CheckSum{1416}
+%% \CharacterTable
+%%  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
+%%   Lower-case    \a\b\c\d\e\f\g\h\i\j\k\l\m\n\o\p\q\r\s\t\u\v\w\x\y\z
+%%   Digits        \0\1\2\3\4\5\6\7\8\9
+%%   Exclamation   \!     Double quote  \"     Hash (number) \#
+%%   Dollar        \$     Percent       \%     Ampersand     \&
+%%   Acute accent  \'     Left paren    \(     Right paren   \)
+%%   Asterisk      \*     Plus          \+     Comma         \,
+%%   Minus         \-     Point         \.     Solidus       \/
+%%   Colon         \:     Semicolon     \;     Less than     \<
+%%   Equals        \=     Greater than  \>     Question mark \?
+%%   Commercial at \@     Left bracket  \[     Backslash     \\
+%%   Right bracket \]     Circumflex    \^     Underscore    \_
+%%   Grave accent  \`     Left brace    \{     Vertical bar  \|
+%%   Right brace   \}     Tilde         \~}
+%%
+\documentclass[grad,numbers]{coppe}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+
+\makelosymbols
+\makeloabbreviations
+
+\begin{document}
+  \title{Título da Tese}
+  \foreigntitle{Thesis Title}
+  \author{Nome do Autor}{Sobrenome}
+  \advisor{Prof.}{Nome do Primeiro Orientador}{Sobrenome}{D.Sc.}
+  \advisor{Prof.}{Nome do Segundo Orientador}{Sobrenome}{Ph.D.}
+  \advisor{Prof.}{Nome do Terceiro Orientador}{Sobrenome}{D.Sc.}
+
+  \examiner{Prof.}{Nome do Primeiro Examinador Sobrenome}{D.Sc.}
+  \examiner{Prof.}{Nome do Segundo Examinador Sobrenome}{Ph.D.}
+  \examiner{Prof.}{Nome do Terceiro Examinador Sobrenome}{D.Sc.}
+  \examiner{Prof.}{Nome do Quarto Examinador Sobrenome}{Ph.D.}
+  \examiner{Prof.}{Nome do Quinto Examinador Sobrenome}{Ph.D.}
+  
+  
+  
+  \department{EET}% Confira a tabela a seguir para saber como preencher o comando \department de acordo com seu curso (Graduação - Poli) ou programa (Pós-Graduação - COPPE).
+  
+  %%%%%% Para alunos da POLI %%%%%%
+  
+  %% Course											Option
+  %% Engenharia Ambiental                             EA
+  %% Engenharia Civil                                 ECV
+  %% Engenharia de Computação e Informação            ECI
+  %% Engenharia de Controle e Automação               ECA
+  %% Engenharia de Materiais                          EMAT
+  %% Engenharia de Petróleo                           EPT
+  %% Engenharia de Produção                           EPR
+  %% Engenharia Eletrônica e de Computação            EEC
+  %% Engenharia Elétrica                              EET
+  %% Engenharia Mecânica                              EMC
+  %% Engenharia Metalúrgica                           EMET
+  %% Engenharia Naval e Oceânica                      ENO
+  %% Engenharia Nuclear                               ENU
+  
+  
+  %%%%%% Para alunos da COPPE %%%%%%
+  
+  %% Program											Option
+  %% Engenharia Biomédica								PEB
+  %% Engenharia Civil									PEC
+  %% Engenharia Elétrica								PEE
+  %% Engenharia Mecânica								PEM
+  %% Engenharia Metalúrgica e de Materiais				PEMM
+  %% Engenharia Nuclear									PEN
+  %% Engenharia Oceânica								PENO
+  %% Planejamento Energético							PPE
+  %% Engenharia de Produção								PEP
+  %% Engenharia Química									PEQ
+  %% Engenharia de Sistemas e Computação				PESC
+  %% Engenharia de Transportes							PET
+  
+  
+  
+  
+  
+  
+  \date{01}{2016}
+
+  \keyword{Primeira palavra-chave}
+  \keyword{Segunda palavra-chave}
+  \keyword{Terceira palavra-chave}
+
+  \maketitle
+
+  \frontmatter
+  
+  \makecatalog
+  
+  \dedication{A alguém cujo valor é digno desta dedicatória.}
+
+  \chapter*{Agradecimentos}
+
+  Gostaria de agradecer a todos.
+
+  \begin{abstract}
+
+  Apresenta-se, nesta tese, ...
+
+  \end{abstract}
+
+  \begin{foreignabstract}
+
+  In this work, we present ...
+
+  \end{foreignabstract}
+
+  \tableofcontents
+  \listoffigures
+  \listoftables
+  \printlosymbols
+  \printloabbreviations
+
+  \mainmatter
+%  \doublespacing
+  \chapter{Introdução}
+
+  Segundo a norma de formatação de teses e dissertações do
+  Instituto Alberto Luiz Coimbra de Pós-graduação e Pesquisa de
+  Engenharia (COPPE), toda abreviatura deve ser definida antes de
+  utilizada.\abbrev{COPPE}{Instituto Alberto Luiz Coimbra de Pós-graduação e Pesquisa de Engenharia}
+
+  Do mesmo modo, é imprescindível definir os símbolos, tal como o
+  conjunto dos números reais $\mathbb{R}$ e o conjunto vazio $\emptyset$.
+  \symbl{$\mathbb{R}$}{Conjunto dos números reais}
+  \symbl{$\emptyset$}{Conjunto vazio}
+  
+  Você deve selecionar seu curso de engenharia usando o comando \texttt{\textbackslash department\{Sigla\}} e no lugar de Sigla inserir a sigla referente ao seu curso de engenharia. A tabela \ref{tab:courses} relaciona as siglas dos cursos de engenharia da Escola Politécnica da Universidade Federal do Rio de Janeiro (POLI-UFRJ), enquanto que a tabela \ref{tab:programs} relaciona as siglas dos programas de pós graduação da COPPE.\abbrev{POLI-UFRJ}{Escola Politécnica da Universidade Federal do Rio de Janeiro}
+  
+  
+  \begin{table}[h]
+    \caption{Siglas dos cursos de engenharia da Escola Politécnica da UFRJ.}
+    \label{tab:courses}
+    \centering
+    {\footnotesize
+    \begin{tabular}{|c|c|}
+      \hline
+      Sigla & Curso\\
+      \hline
+      EA &  Engenharia Ambiental \\
+      ECV & Engenharia Civil\\
+      ECI & Engenharia de Computação e Informação \\
+      ECA & Engenharia de Controle e Automação \\
+      EMAT & Engenharia de Materiais\\
+      EPT & Engenharia de Petróleo\\
+      EPR & Engenharia de Produção\\
+      EEC & Engenharia Eletrônica e de Computação\\
+      EET & Engenharia Elétrica\\
+      EMC & Engenharia Mecânica\\
+      EMET & Engenharia Metalúrgica\\
+      ENO & Engenharia Naval e Oceânica\\
+      ENU & Engenharia Nuclear\\
+      \hline
+    \end{tabular}}
+    \end{table}
+    
+    
+  \begin{table}[h]
+  	\caption{Siglas dos programas de pós graduação da COPPE.}
+  	\label{tab:programs}
+  	\centering
+  	{\footnotesize
+  	\begin{tabular}{|c|c|}
+  		\hline
+  		Sigla & Curso\\
+  		\hline
+  		PEB & Engenharia Biomédica \\
+  		PEC & Engenharia Civil\\
+  		PEE & Engenharia Elétrica \\
+  		PEM & Engenharia Mecânica \\
+  		PEMM & Engenharia Metalúrgica e de Materiais\\
+  		PEN & Engenharia Nuclear\\
+  		PENO & Engenharia Oceânica\\
+  		PPE & Planejamento Energético\\
+  		PEP & Engenharia de Produção\\
+  		PEQ & Engenharia Química\\
+  		PESC & Engenharia de Sistemas e Computação\\
+  		PET & Engenharia de Transportes\\
+  		\hline
+  	\end{tabular}}
+  \end{table}
+
+
+  Note também que todas as figuras ou tabelas devem ser citadas no texto. Como ocorre com as tabelas \ref{tab:courses} e \ref{tab:programs}. Para ilustrar o uso de figuras em \LaTeX, considere as figuras \ref{fig:poli} e \ref{fig:coppe}.
+  
+   \begin{figure}
+      \centering
+      \includegraphics[width=5cm]{poli-logo.pdf}
+      \caption{Logotipo da POLI-UFRJ.}
+      \label{fig:poli}
+    \end{figure}
+    
+    \begin{figure}
+       \centering
+       \includegraphics[width=5cm]{coppe-logo.pdf}
+       \caption{Logotipo da COPPE.}
+       \label{fig:coppe}
+     \end{figure}
+
+  \chapter{Revisão Bibliográfica}
+
+  Para ilustrar a completa adesão ao estilo de citações e listagem de
+  referências bibliográficas, a Tabela \ref{tab:citation} apresenta citações de alguns dos trabalhos contidos na norma fornecida pela CPGP da
+  COPPE, utilizando o estilo numérico.
+
+  \begin{table}[h]
+  \caption{Exemplos de citações utilizando o comando padrão
+    \texttt{\textbackslash cite} do \LaTeX\ e
+    o comando \texttt{\textbackslash citet},
+    fornecido pelo pacote \texttt{natbib}.}
+  \label{tab:citation}
+  \centering
+  {\footnotesize
+  \begin{tabular}{|c|c|c|}
+    \hline
+    Tipo da Publicação & \verb|\cite| & \verb|\citet|\\
+    \hline
+    Livro & \cite{book-example} & \citet{book-example}\\
+    Artigo & \cite{article-example} & \citet{article-example}\\
+    Relatório & \cite{techreport-example} & \citet{techreport-example}\\
+    Relatório & \cite{techreport-exampleIn} & \citet{techreport-exampleIn}\\
+    Anais de Congresso & \cite{inproceedings-example} &
+      \citet{inproceedings-example}\\
+    Séries & \cite{incollection-example} & \citet{incollection-example}\\
+    Em Livro & \cite{inbook-example} & \citet{inbook-example}\\
+    Dissertação de mestrado & \cite{mastersthesis-example} &
+      \citet{mastersthesis-example}\\
+    Tese de doutorado & \cite{phdthesis-example} & \citet{phdthesis-example}\\
+    \hline
+  \end{tabular}}
+  \end{table}
+  
+  É importante notar que, segundo a \href{http://www.poli.ufrj.br/graduacao_projeto.php}{Norma para a Elaboração Gráfica do Projeto de Graduação} da Escola Politécnica da UFRJ para trabalhos de conclusão de curso de engenharia de julho de 2012, as referências bibliográficas podem ser apresentadas de duas formas: $(i)$ Referências numeradas e $(ii)$ Referências em ordem alfabética. Para exibição numerada, em que a exibição das referências bibliográficas segue a ordem de citação usada no texto, use o comando \texttt{\textbackslash bibliographystyle\{coppe-unsrt\}}. Para exibição de referências bibliográficas em ordem alfabética, basta usar o comando \texttt{\textbackslash bibliographystyle\{coppe-plain\}} ao final do documento. 
+  
+  
+  \chapter{Método Proposto}
+  
+  
+  
+  \chapter{Resultados e Discussões}
+  
+  
+  
+  \chapter{Conclusões}
+  
+  
+  
+  
+
+  \backmatter
+  \bibliographystyle{coppe-unsrt}
+  \bibliography{example}
+
+  \appendix
+  \chapter{Algumas Demonstrações}
+\end{document}
+%% 
+%%
+%% End of file `example.tex'.
